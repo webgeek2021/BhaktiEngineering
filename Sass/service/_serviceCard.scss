@@ -1,0 +1,86 @@
+@use "../common/color" as colors;
+@use "../common/function" as func;
+@use "../common/mixins" as mixins;
+
+.service-page-card {
+  margin-bottom: 50px;
+  
+
+  .icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .paragraph-holder {
+    .para-content {
+      .title {
+        color: colors.$black;
+        font-weight: 600;
+        font-size: func.to-rem(18);
+        margin-bottom: 8px;
+      }
+
+      .content {
+        color: colors.$c-2D2;
+        font-size: func.to-rem(17);
+      }
+    }
+  }
+
+  .image-arr-container {
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 5px;
+    .image {
+      border-radius: 5px;
+      background: linear-gradient(
+        50deg,
+        colors.$loading_background_color 0%,
+        colors.$c-9d9 100%
+      );
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+      padding: 5px;
+    }
+  }
+}
+
+@include mixins.responsiveness-tablet {
+  .service-page-card {
+    .paragraph-holder {
+      .para-content {
+        .title {
+          font-size: func.to-rem(20);
+        }
+        .content {
+          font-size: func.to-rem(19);
+        }
+      }
+      .image-arr-container{
+        margin-top: 20px;
+        .image{
+            width: 100px;
+            height: 100px;
+        }
+      }
+    }
+  }
+}
+
+@include mixins.responsiveness-desktop{
+    .service-page-card {
+        .paragraph-holder {
+            display: flex;
+            width: 100%;
+            align-items: start;
+          .para-content {
+            max-width: 50%;
+          }
+          .image-arr-container{
+            margin: 0px 0px 0px 20px;
+          }
+        }
+      }
+}

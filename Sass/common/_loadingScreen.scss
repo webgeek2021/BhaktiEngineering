@@ -1,0 +1,13 @@
+@use "./color" as color;
+
+.loading_screen{
+    background-color: color.$white;
+    height: 100vh;
+    .laoding-container{
+        .loading_gif{
+            height: auto;
+            width: 300px;
+        }
+
+    }
+}

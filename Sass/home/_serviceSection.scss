@@ -1,0 +1,128 @@
+@use "../common/color" as colors;
+@use "../common/function" as func;
+@use "../common/mixins" as mixins;
+
+.service-card {
+    padding: 20px;
+    box-shadow: 0 0 14px 0 colors.$c-A2A;
+    animation: fade-in 3s ease-in-out;
+
+    &:nth-child(1) {
+        margin-bottom: 70px;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+
+        img {
+            width: 64px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .card-title {
+        margin-bottom: 20px;
+    }
+
+    .service-features {
+
+        .li-container {
+            margin: 0 0 25px 0;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .read-more-btn {
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .read-more {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+.our-section-container {
+    margin: 50px 0;
+    padding: 0px;
+    position: relative;
+
+    .logo {
+        display: none;
+    }
+}
+
+@include mixins.responsiveness-tablet {
+    .our-section-container{
+        margin-bottom: 100px;
+    }
+    .service-card {
+        width: 47%;
+        position: relative;
+
+        &:nth-child(1) {
+            margin: 0;
+        }
+
+        &:nth-child(3) {
+            .read-more-btn {
+                position: relative;
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+@include mixins.responsiveness-desktop {
+
+
+    .service-card {
+        animation: fade-in 3s ease-in-out;
+        width: 35%;
+
+        &:nth-child(3) {
+            .read-more-btn {
+                position: relative;
+                bottom: -53px;
+            }
+        }
+    }
+
+    .our-section-container {
+        position: relative;
+
+        .logo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            position: absolute;
+            top: 51%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // animation: fade-in 3s ease-in-out ;
+            transform-origin: 0% -10%;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}

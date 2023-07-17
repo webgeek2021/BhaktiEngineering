@@ -1,0 +1,18 @@
+@use "../common/color" as colors;
+@use "../common/mixins" as mixins;
+@use "../common/function" as func;
+
+.wavy-animation{
+    font-size: func.to-rem(35);
+    font-weight: 700;
+    color : colors.$primary-red;
+}
+
+
+
+@include mixins.responsiveness-tablet{
+    .wavy-animation{
+        font-size: func.to-rem(60);
+
+    }
+}

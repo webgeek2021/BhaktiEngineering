@@ -1,0 +1,111 @@
+@use "../common/color" as colors;
+@use "../common/function" as func;
+@use "../common/mixins" as mixins;
+
+.service_page {
+    .service-photo-gallery-section {
+        background: linear-gradient(195deg, colors.$loading_background_color , colors.$c-aba);
+        ;
+        padding: 20px;
+        height: 50vh;
+        position: relative;
+        // .photo-gallery-grid {
+        //     display: flex;
+        //     width: 100%;
+        //     height: 100%;
+        //     justify-content: center;
+
+        //     .images-1{
+        //         display: flex;
+        //         flex-direction: column;
+        //         .img-1, .img-4{
+        //             width : 50%;
+        //             height: 100%;
+        //             // desktop
+        //             // width: 100%;
+        //             // height: 50%;
+        //             object-fit: cover;
+        //         }
+        //     }
+        //     .images-2{
+        //         .img-2,.img-3{
+        //             // desktop
+        //             // height: 100% ;
+        //             height: 100%;
+        //             width: 50%;
+        //         }
+
+        //     }
+        // }
+
+        .photo-gallery-grid {
+            background: url("../assets/Images/service-hero-small.jpg") no-repeat;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size:contain ;
+        }
+
+        .hero-overlay {
+            background: colors.$primary-red;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0.3;
+        }
+
+        .hero-text {
+            content: "Bhakti Engineering";
+            font-size: func.to-rem(42);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            color: colors.$white;
+            text-align: center;
+            line-height: 44px;
+        }
+    }
+
+    .section-title{
+        margin-bottom: 20px;
+    }
+}
+
+@include mixins.responsiveness-tablet {
+    .service_page {
+        .service-photo-gallery-section {
+            .photo-gallery-grid {
+                background: url("../assets/Images/service-hero-medium.jpg") no-repeat;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+            .hero-text{
+                font-size: func.to-rem(65);
+                line-height: 70px;
+            }
+        }
+    }
+}
+
+@include mixins.responsiveness-desktop {
+    .service_page {
+        .service-photo-gallery-section {
+            height: 92vh;
+
+            .photo-gallery-grid {
+                background: url("../assets/Images/service-hero-large.jpg") no-repeat;
+                background-position: center;
+            }
+
+            .hero-text{
+                font-size: func.to-rem(100);
+                line-height: 94px;
+            }
+        }
+    }
+}

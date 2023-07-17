@@ -1,0 +1,55 @@
+
+// for breakpoint info 
+// https://getbootstrap.com/docs/5.3/layout/breakpoints/#core-concepts
+
+// mixins from bootstrap
+// for mobile device 
+// @include media-breakpoint-up(sm){
+//     background-color: red;
+// }
+
+// // for medium size device
+// @include media-breakpoint-up(md){
+//     background-color: green;
+// }
+
+
+// // for large device
+// @include media-breakpoint-up(lg){
+//     background-color: yellow;
+// }
+
+// // for extra large device 
+// @include media-breakpoint-up(xl){
+//     background-color: black;
+// }
+
+// to-define your own mixin 
+// @mixin mixin-name($parameter1, $parameter2, ...) {
+//     // Styles and code to be included in the mixin
+//   }
+
+@mixin responsiveness-tablet(){
+    // we can also add our own media query here
+    @media (min-width: 768px){
+        @content
+    }
+};
+
+@mixin responsiveness-desktop(){
+    @media (min-width: 992px){
+        @content
+    }
+};
+
+@mixin responsiveness-largeDesktop(){
+    @media (min-width: 1200px){
+        @content
+    }
+};
+@mixin responsiveness-extraLargeDesktop(){
+    @media (min-width: 1400px){
+        @content
+    }
+};
+

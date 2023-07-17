@@ -1,0 +1,59 @@
+@use "../common/color" as colors;
+@use "../common/function" as func;
+@use "../common/mixins" as mixins;
+
+.contact-us-form{
+    background-color: colors.$primary-red;
+    padding: 30px 15px 30px 15px;
+    border-radius: 5px;
+    .input-field{
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border: none;
+        color: colors.$c-8F8;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        width: 100%;
+        border-radius: 5px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        &::placeholder{
+            color: colors.$c-8F8;
+        }
+    }
+    
+    select{
+        &:focus{
+            box-shadow: none;
+            outline: none;
+        }
+        option{
+            margin: 0 0 10px 0;
+            color: colors.$c-8F8;
+        }
+    }
+    .submit-btn{
+        padding: 10px 30px;
+        background-color: colors.$white;
+        color: colors.$black;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
+
+@include mixins.responsiveness-desktop{
+.contact-us-form{
+        .email-phone{
+            .input-field{
+                &:first-child{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

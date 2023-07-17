@@ -1,0 +1,178 @@
+@use "../common/color" as colors;
+@use "../common/function" as func;
+@use "../common/mixins" as mixin;
+
+.footer-section {
+    background-color: colors.$footer-color;
+    .container {
+        padding: 40px 20px;
+
+        .company-info {
+            margin-bottom: 50px;
+
+            .logo-container {
+                img {
+                    width: 150px;
+                    height: auto;
+                    margin: 0 0 15px 0;
+                    object-fit: contain;
+                    margin: 0 0 10px 0;
+                }
+
+                .company-name {
+                    color: colors.$primary-red;
+                    margin: 0 0 50px 0;
+                }
+            }
+
+            .details-container {
+                .detail {
+                    span {
+                        display: block;
+                        color: colors.$primary-red;
+                        font-weight: 600;
+                        font-size: func.to-rem(20);
+                        // margin-bottom: 15px;
+                    }
+
+                    p {
+                        color: colors.$white;
+                        font-weight: 500;
+                        font-size: func.to-rem(20);
+                    }
+
+                    // &:not(:last-child) {
+                    margin-bottom: 20px;
+                    // }
+                }
+            }
+        }
+
+        .company-pages {
+            margin-bottom: 50px;
+
+            div {
+
+                .title {
+                    color: colors.$primary-red;
+                    font-weight: 600;
+                    font-size: func.to-rem(20);
+                    margin-bottom: 15px;
+                    display: block;
+                }
+
+                ul {
+                    .nav-link {
+
+                        a{
+                            color: colors.$white;
+                            font-size: func.to-rem(17);
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .company-social {
+            margin-bottom: 50px;
+
+            .title {
+                color: colors.$primary-red;
+                font-weight: 600;
+                font-size: func.to-rem(20);
+                margin-bottom: 15px;
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+.hit-counter-container{
+    margin-top: 20px;
+    .digit{
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        color: colors.$white;
+        font-weight: 600;
+        &:not(:last-child){
+            margin-right: 2px;
+        }
+        border-radius: 2px;
+        background-color: colors.$primary-red;
+
+    }
+}
+
+@include mixin.responsiveness-tablet {
+    .footer-section {
+        .container {
+            .company-info {
+                .details-container {
+                    .detail {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.responsiveness-desktop {
+    .footer-section {
+
+        .container {
+            padding: 40px 0px;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .company-info {
+                width: calc(100% / 3);
+                margin: 0px;
+
+                .logo-container {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        position: relative;
+                        left: -10px;
+                    }
+                    .company-name{
+                        font-size: 30px;
+                        margin: 0px;
+                    }
+                }
+
+                .details-container {
+                    .detail {
+                        margin: 0 20px 20px 0;
+
+                        p {
+                            font-size: 16px;
+                        }
+
+                        .phone,
+                        .email {
+                            letter-spacing: 1px;
+                        }
+
+                    }
+                }
+            }
+
+            .company-pages {
+                margin: 0px;
+            }
+
+            .company-social {
+                margin: 0px;
+            }
+        }
+    }
+}
