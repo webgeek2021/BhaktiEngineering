@@ -95,7 +95,28 @@ button,
     border-radius: 5px;
 }
 
-
+.toast{
+    position: fixed;
+    top: 200px;
+    right: 10px;
+    border: none;
+    .toast-header{
+        border: none;
+        background-color: colors.$c-aba;
+        img{
+          width: 50px;
+          object-fit: contain;
+          height: auto;
+        }
+      }
+      .toast-body{
+        background: colors.$primary-red;
+        border: none;
+        color: colors.$white;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+}
 .section-title {
     margin-top: 30px;
 

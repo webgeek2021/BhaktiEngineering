@@ -31,10 +31,19 @@
                 position: absolute;
                 background-color: colors.$primary-red;
                 top: 0px;
+                left: -20%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                opacity: 0;
+                transition: left 1s ease-in-out;
+                &:hover{
+                    left   :0px;
+                    opacity: 0.6;
+                }
             }
+
+            
             .text{
                 color: colors.$white;
                 font-size: 50px;

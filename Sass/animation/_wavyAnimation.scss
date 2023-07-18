@@ -8,8 +8,6 @@
     color : colors.$primary-red;
 }
 
-
-
 @include mixins.responsiveness-tablet{
     .wavy-animation{
         font-size: func.to-rem(60);

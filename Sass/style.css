@@ -101,6 +101,30 @@ button:focus, button:hover, button:active,
   border-radius: 5px;
 }
 
+.toast {
+  position: fixed;
+  top: 200px;
+  right: 10px;
+  border: none;
+}
+.toast .toast-header {
+  border: none;
+  background-color: #abaaaa;
+}
+.toast .toast-header img {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+.toast .toast-body {
+  background: #911918;
+  border: none;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .section-title {
   margin-top: 30px;
 }
@@ -697,9 +721,16 @@ header .navbar .show-options {
   position: absolute;
   background-color: #911918;
   top: 0px;
+  left: -20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: left 1s ease-in-out;
+}
+.gallery-page-container .images-container .image-container .image-text:hover {
+  left: 0px;
+  opacity: 0.6;
 }
 .gallery-page-container .images-container .image-container .text {
   color: white;

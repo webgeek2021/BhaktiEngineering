@@ -291,7 +291,7 @@
                   class="input-field"
                   aria-label="Default select example"
                 >
-                  <option value="Repair_Service">Repair Service</option>
+                  <option value="Repair_Service" selected>Repair Service</option>
                   <option value="Design_Service">Design Service</option>
                   <option value="Other">Other</option>
                 </select>
@@ -314,6 +314,15 @@
         </div>
       </section>
       <!-- Contact Us Section End -->
+
+      <!-- Toast Start -->
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="toast-container">
+        <div class="toast-header">
+          <img src="../assets/Images/Logo.png" class="rounded mr-2" alt="logo" />
+        </div>
+        <div class="toast-body">SuccessFully Submitted</div>
+      </div>
+      <!-- Toast End -->
     </main>
     <!-- main section Ends -->
 
@@ -424,6 +433,7 @@
 
     <!-- gsap script ends -->
 
+    <script src="../js/require.js"></script>
     <script src="../js/index.js"></script>
   </body>
 </html>

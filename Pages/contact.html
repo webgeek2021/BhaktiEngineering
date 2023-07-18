@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhakti Engineering</title>
+
+    <!-- Bootstrap Link Start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Link Ends-->
+
+    <!-- Bootstrap Icons Link Start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Icons Link Ends-->
+
+    <!-- Sass Link Starts-->
+    <link rel="stylesheet" href="../Sass/style.css" />
+    <!-- Sass Link Ends-->
+  </head>
+  <body>
+    <header>
+      <nav class="container navbar">
+        <a to="/" class="d-flex align-items-center logo">
+          <image
+            src="../assets/Images/Logo.png"
+            alt="company-logo"
+            class="logo-img"
+          />
+          <h1 class="company-name">Bhakti Engineering</h1>
+        </a>
+
+        <button
+          class="menu-btn"
+          id="menubtn"
+          aria-controls="responsive-navbar-nav"
+        >
+          <div class="line" id="line-1"></div>
+          <div class="line" id="line-2"></div>
+          <div class="line" id="line-3"></div>
+        </button>
+
+        <div class="options" id="option-li">
+          <ul class="navbar-nav">
+            <li class="li">
+              <a to="/" class="animate-border">Home</a>
+            </li>
+            <li class="li">
+              <a to="/service" class="animate-border"> Services </a>
+            </li>
+            <li class="li">
+              <a to="/gallery" class="animate-border"> Gallery </a>
+            </li>
+            <li class="li">
+              <a to="/contact-us" class="animate-border"> Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-form-page">
+      <!-- section Title Start -->
+      <div class="container section-title">
+        <span class="highlight-letter">C</span><span>ontact Us</span>
+      </div>
+      <!-- section Title End -->
+
+      <div class="container d-flex flex-column align-items-center">
+        <!-- Contact Form Start -->
+        <form
+          id="contactForm"
+          class="d-flex flex-column align-items-center contact-us-form"
+        >
+          <input
+            type="text"
+            required
+            placeholder="Enter Your Full Name"
+            class="form-control input-field"
+            id="name"
+          />
+          <div
+            class="w-100 d-flex flex-column flex-lg-row justify-content-md-between email-phone"
+          >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+              class="input-field form-control"
+            />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter Your Phone Number"
+              required
+              pattern="[0-9]{10}"
+              class="input-field form-control"
+            />
+          </div>
+          <select
+            id="service"
+            required
+            class="input-field"
+            aria-label="Default select example"
+          >
+            <option value="Repair_Service" selected>Repair Service</option>
+            <option value="Design_Service">Design Service</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <textarea
+            rows="6"
+            placeholder="Message"
+            class="input-field"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <button class="submit-btn btn btn-primary" type="submit">
+            Submit
+          </button>
+        </form>
+        <!-- Contact Form End -->
+
+        <!-- Address Map Start -->
+        <div class="address-map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.710464705649!2d72.85890232919081!3d21.215150691271358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f1b28f3e76d%3A0x53480b307d6f830a!2sSargam%20Doctor%20House%2C%203%2C%20Varachha%20Main%20Rd%2C%20Narmad%20Nagar%2C%20Tapsil%20Society%2C%20Hirabaugh%2C%20Surat%2C%20Gujarat%20395006!5e0!3m2!1sen!2sin!4v1687234086515!5m2!1sen!2sin"
+            class="map"
+          >
+          </iframe>
+        </div>
+        <!-- Address Map Ends -->
+      </div>
+
+       <!-- Toast Start -->
+       <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="toast-container">
+        <div class="toast-header">
+          <img src="../assets/Images/Logo.png" class="rounded mr-2" alt="logo" />
+        </div>
+        <div class="toast-body">SuccessFully Submitted</div>
+      </div>
+      <!-- Toast End -->
+      
+    </main>
+    <footer class="footer-section">
+      <div class="container d-flex flex-column-reverse flex-lg-row">
+        <div class="text-center text-lg-start company-info">
+          <div class="logo-container">
+            <image src="../assets/Images/Logo.png" alt="company-logo" />
+            <h4 class="company-name">Bhakti Engineering</h4>
+          </div>
+
+          <div class="details-container">
+            <div class="detail address">
+              <span>Address</span>
+              <p>
+                B/12 , Laxmi Industrial Estate (Jalaram Building) , Nr.Sargam
+                Doctor House , Hirabaug , Varachha Road , Surat - 395006
+              </p>
+            </div>
+            <div class="contact-details">
+              <!-- add phone number detail here -->
+              <div class="detail">
+                <span>Email</span>
+                <p class="email">bhaktiengineering987@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between company-pages">
+          <div class="text-center w-50">
+            <span class="title">Company</span>
+            <ul>
+              <li class="nav-link animate-border">
+                <a href="/about" target="_blank">About Us</a>
+              </li>
+              <li class="nav-link animate-border">
+                <a href="/contact-us" target="_blank">Contact Us</a>
+              </li>
+              <li class="nav-link animate-border">
+                <a href="/gallery" target="_blank">Gallery</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-center w-50">
+            <span class="title">Services</span>
+            <ul>
+              <li class="nav-link animate-border">
+                <a href="/service" target="_blank"
+                  >Diamond Machinery Part Repairing
+                </a>
+              </li>
+              <li class="nav-link animate-border">
+                <a href="/service" target="_blank">Bhakti Design</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center company-social">
+          <span class="title">Social</span>
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/9173333063" target="_blank">
+              <img src="../assets/Icons/WhatsAppIcon.svg" />
+            </a>
+
+            <a href="https://wa.me/9173333063" target="_blank">
+              <img src="../assets/Icons/instagramIcon.svg" />
+            </a>
+
+            <a href="https://wa.me/9173333063" target="_blank">
+              <img src="../assets/Icons/LinkedinIcon.svg" />
+            </a>
+
+            <a href="https://wa.me/9173333063" target="_blank">
+              <img src="../assets/Icons/youtubeIcon.svg" />
+            </a>
+
+            <BackToTopButton />
+          </div>
+          <!-- back To button starts -->
+          <button
+            class="btn btn-primary back-to-top-button"
+            id="back-to-top-btn"
+          >
+            <i class="bi bi-chevron-double-up up-arrow"></i>
+            <h5>Top</h5>
+          </button>
+          <!-- back To button Ends -->
+          <Counter />
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/require.js"></script>
+    <!-- <script src="../js/contact.js"></script> -->
+  </body>
+</html>
