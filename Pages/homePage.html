@@ -28,7 +28,7 @@
 
     <header>
       <nav class="container navbar">
-        <a to="/" class="d-flex align-items-center logo">
+        <a href="../Pages/homePage.html" class="d-flex align-items-center logo">
           <image
             src="../assets/Images/Logo.png"
             alt="company-logo"
@@ -50,16 +50,16 @@
         <div class="options" id="option-li">
           <ul class="navbar-nav">
             <li class="li">
-              <a to="/" class="animate-border">Home</a>
+              <a href="../Pages/homePage.html" class="animate-border">Home</a>
             </li>
             <li class="li">
-              <a to="/service" class="animate-border"> Services </a>
+              <a href="../Pages/service.html" class="animate-border"> Services </a>
             </li>
             <li class="li">
-              <a to="/gallery" class="animate-border"> Gallery </a>
+              <a href="../Pages/gallery.html" class="animate-border"> Gallery </a>
             </li>
             <li class="li">
-              <a to="/contact-us" class="animate-border"> Contact Us </a>
+              <a href="../Pages/contact.html" class="animate-border"> Contact Us </a>
             </li>
           </ul>
         </div>
@@ -71,9 +71,9 @@
       <section class="hero-container">
         <section class="hero"></section>
         <div class="d-flex flex-column align-items-center hero-text">
-          <h1>Crafting Design and Repair</h1>
-          <p>Expert repairs, innovative designs .</p>
-          <a href="#services" class="primary-btn"> Our Services </a>
+          <h1 id="hero-title">Crafting Design and Repair</h1>
+          <p id="hero-subtitle">Expert repairs, innovative designs .</p>
+          <a href="#services" class="primary-btn" id="hero-btn"> Our Services </a>
         </div>
       </section>
 
@@ -89,7 +89,7 @@
       <!-- section Title End -->
 
       <!-- About Us Section Starts -->
-      <div class="about-section-container">
+      <div class="about-section-container" id="about-us-container">
         <div
           class="d-flex flex-column-reverse container flex-lg-row about-section"
         >
@@ -144,10 +144,11 @@
       <!-- Service section Title End -->
 
       <!-- Service Section Starts -->
-      <div class="container">
+      <div class="container" id="service-section">
         <section
           class="container d-flex flex-column flex-md-row w-100 justify-content-md-between justify-content-lg-evenly our-section-container"
-        >
+          
+          >
           <!-- card - 1 -->
           <div
             class="d-flex flex-column align-items-center service-card"
@@ -193,7 +194,7 @@
           <!-- card - 1 end -->
 
           <!-- gif file -->
-          <image src="../assets/Images/Logo.png" alt="" class="logo" />
+          <image src="../assets/Images/Logo.png" alt="" class="logo" id="card-logo-center"/>
           <!-- gif file end -->
 
           <!-- card 2 start -->
@@ -242,9 +243,9 @@
       <!-- Service section Title End -->
 
       <!-- Contact Us Section Start -->
-      <section class="contact-us-container">
+      <section class="contact-us-container" id="contact-us-section">
         <div class="container">
-          <div class="row">
+          <div class="row" id="contact-form">
             <div class="col-sm-12 col-md-4 order-last order-md-first p-md-0">
               <div class="address-map-container">
                 <iframe

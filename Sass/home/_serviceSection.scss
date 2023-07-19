@@ -5,7 +5,7 @@
 .service-card {
     padding: 20px;
     box-shadow: 0 0 14px 0 colors.$c-A2A;
-    animation: fade-in 3s ease-in-out;
+    // animation: fade-in 3s ease-in-out;
 
     &:nth-child(1) {
         margin-bottom: 70px;
@@ -85,7 +85,7 @@
 
 
     .service-card {
-        animation: fade-in 3s ease-in-out;
+        // animation: fade-in 3s ease-in-out;
         width: 35%;
 
         &:nth-child(3) {

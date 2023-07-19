@@ -555,7 +555,6 @@ header .navbar .show-options {
 .service-card {
   padding: 20px;
   box-shadow: 0 0 14px 0 #A2A2A2;
-  animation: fade-in 3s ease-in-out;
 }
 .service-card:nth-child(1) {
   margin-bottom: 70px;
@@ -615,7 +614,6 @@ header .navbar .show-options {
 }
 @media (min-width: 992px) {
   .service-card {
-    animation: fade-in 3s ease-in-out;
     width: 35%;
   }
   .service-card:nth-child(3) .read-more-btn {

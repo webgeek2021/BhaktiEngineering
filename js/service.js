@@ -88,7 +88,7 @@ const getRepairHolder = ()=>{
             )
         })
         const card = `
-        <div class="d-flex align-items-start service-page-card">
+        <div class="d-flex align-items-start service-page-card" id="service-card">
             <img src="../assets/Icons/arrow-right.svg" alt="" class="icon"/>
             <div class="paragraph-holder">
                 <div class="para-content">
