@@ -3,7 +3,12 @@
 @use "../common/mixins" as mixins;
 
 
+.home-page{
+  opacity: 0;
+  overflow: hidden;
+}
     .home-page-container{ 
+      overflow: hidden;
     .hero-container {
       position: relative;
 

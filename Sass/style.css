@@ -225,8 +225,13 @@ body {
   }
 }
 .loading_screen {
-  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   height: 100vh;
+  display: none;
+  background-color: white;
 }
 .loading_screen .laoding-container .loading_gif {
   height: auto;
@@ -403,6 +408,14 @@ header .navbar .show-options {
   header .navbar .options .navbar-nav .li:not(:last-child) {
     margin: 0px 20px 0 0;
   }
+}
+.home-page {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.home-page-container {
+  overflow: hidden;
 }
 .home-page-container .hero-container {
   position: relative;
