@@ -65,7 +65,7 @@ button,
         box-shadow: none;
         border: none;
         // background-color: colors.$primary-red;
-        background-color: inherit;
+        // background-color: inherit;
     }
 }
 
@@ -93,6 +93,9 @@ button,
     font-weight: 500;
     padding: 10px 30px;
     border-radius: 5px;
+    &:hover{
+        color: colors.$loading_background_color;
+    }
 }
 
 .toast{

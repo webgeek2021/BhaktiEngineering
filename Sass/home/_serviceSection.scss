@@ -35,7 +35,12 @@
             }
         }
     }
-
+    .read-btn{
+        &:hover{
+            cursor: pointer;
+            color: white;
+        }
+    }
     .read-more-btn {
         img {
             width: 20px;

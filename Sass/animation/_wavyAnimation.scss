@@ -5,12 +5,17 @@
 .wavy-animation{
     font-size: func.to-rem(35);
     font-weight: 700;
+    letter-spacing: -4px;
+    // opacity: 0;
     color : colors.$primary-red;
+    .wavy-text{
+        opacity:  1;
+    }
 }
 
 @include mixins.responsiveness-tablet{
     .wavy-animation{
         font-size: func.to-rem(60);
-
+        letter-spacing: -8px;
     }
 }

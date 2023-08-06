@@ -25,35 +25,42 @@
   </head>
 
   <body>
-
-    <!-- loading Animation Starts -->
-    <div class=' align-items-center justify-content-center loading_screen' id="loading_screen">
-      <div class='d-flex flex-column align-items-center laoding-container'>
-          <Image src="../assets/Icons/LogoGif.gif" alt="logo gif file" class='loading_gif' />
-          <h1 class="wavy-animation">
-            <span class="wavy-text">B</span>
-            <span class="wavy-text">h</span>
-            <span class="wavy-text">a</span>
-            <span class="wavy-text">k</span>
-            <span class="wavy-text">t</span>
-            <span class="wavy-text">i</span>
-            <span class="wavy-text">&nbsp; </span>
-            <span class="wavy-text">E</span>
-            <span class="wavy-text">n</span>
-            <span class="wavy-text">g</span>
-            <span class="wavy-text">i</span>
-            <span class="wavy-text">n</span>
-            <span class="wavy-text">e</span>
-            <span class="wavy-text">e</span>
-            <span class="wavy-text">r</span>
-            <span class="wavy-text">i</span>
-            <span class="wavy-text">n</span>
-            <span class="wavy-text">g</span>
-          </h1>
-      </div>
-  </div>
-    <!-- loading Animation Ends -->
+              <!-- loading Animation Starts -->
+              <div
+              class="align-items-center justify-content-center loading_screen"
+              id="loading_screen"
+            >
+              <div class="d-flex flex-column align-items-center laoding-container">
+                <img
+                  src="../assets/Icons/LogoGif.gif"
+                  alt="logo gif file"
+                  class="loading_gif"
+                />
+                <h1 class="wavy-animation">
+                  <span class="wavy-text">B</span>
+                  <span class="wavy-text">h</span>
+                  <span class="wavy-text">a</span>
+                  <span class="wavy-text">k</span>
+                  <span class="wavy-text">t</span>
+                  <span class="wavy-text">i</span>
+                  <span class="wavy-text">&nbsp;</span>
+                  <span class="wavy-text">E</span>
+                  <span class="wavy-text">n</span>
+                  <span class="wavy-text">g</span>
+                  <span class="wavy-text">i</span>
+                  <span class="wavy-text">n</span>
+                  <span class="wavy-text">e</span>
+                  <span class="wavy-text">e</span>
+                  <span class="wavy-text">r</span>
+                  <span class="wavy-text">i</span>
+                  <span class="wavy-text">n</span>
+                  <span class="wavy-text">g</span>
+                </h1>
+              </div>
+            </div>
+            <!-- loading Animation Ends -->
     <div class="home-page" id="home-page">
+    
       <header>
         <nav class="container navbar">
           <a
@@ -67,7 +74,7 @@
             />
             <h1 class="company-name">Bhakti Engineering</h1>
           </a>
-
+  
           <button
             class="menu-btn"
             id="menubtn"
@@ -77,7 +84,7 @@
             <div class="line" id="line-2"></div>
             <div class="line" id="line-3"></div>
           </button>
-
+  
           <div class="options" id="option-li">
             <ul class="navbar-nav">
               <li class="li">
@@ -102,7 +109,6 @@
           </div>
         </nav>
       </header>
-
       <!-- main section Starts -->
       <main class="home-page-container">
         <section class="hero-container">
@@ -110,7 +116,7 @@
           <div class="d-flex flex-column align-items-center hero-text">
             <h1 id="hero-title">Crafting Design and Repair</h1>
             <p id="hero-subtitle">Expert repairs, innovative designs .</p>
-            <a href="#services" class="primary-btn" id="hero-btn">
+            <a href="./service.html" class="primary-btn" id="hero-btn">
               Our Services
             </a>
           </div>
@@ -159,13 +165,13 @@
                 />
 
                 <div class="know-more-rect">
-                  <a to="/about-us"> Know More </a>
+                  <!-- <a to="/about-us"> Know More </a> -->
                 </div>
               </div>
             </div>
           </div>
-          <a to="/about-us" class="text-center know-more-btn">
-            <span>Know More</span>
+          <a to="#" class="text-center know-more-btn">
+            <!-- <span>Know More</span> -->
           </a>
         </div>
         <!-- About Us Section Ends -->
@@ -189,47 +195,54 @@
           >
             <!-- card - 1 -->
             <div
-              class="d-flex flex-column align-items-center service-card"
+              class="d-flex flex-column align-items-center justify-content-between service-card"
               id="card-one"
             >
-              <div class="text-center text-lg-start image-container">
-                <image src="../assets/Images/tools.png" alt="" />
+              <div>
+                <div class="text-center  image-container">
+                  <image src="../assets/Images/tools.png" alt="" />
+                </div>
+                <h4 class="text-center card-title">
+                  Diamond Machinery Part Repair
+                </h4>
+                <ul class="service-features">
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>2D Design Services</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Ball Screw Repairing Solutions</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span
+                      >4P and Galaxy Machine Axis Service and Repairing</span
+                    >
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Sarine Machine Motor Stage Tilting</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Sarine Machine Motor Repairing</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span
+                      >Axis Type Sarine Machine Axis Fitting and Repairing</span
+                    >
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>General Mechanical Work</span>
+                  </li>
+                </ul>
               </div>
-              <h4 class="text-center card-title">
-                Diamond Machinery Part Repair
-              </h4>
-              <ul class="service-features">
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>2D Design Services</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Ball Screw Repairing Solutions</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>4P and Galaxy Machine Axis Service and Repairing</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Sarine Machine Motor Stage Tilting</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Sarine Machine Motor Repairing</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span
-                    >Axis Type Sarine Machine Axis Fitting and Repairing</span
-                  >
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>General Mechanical Work</span>
-                </li>
-              </ul>
+              <a href="./service.html" class="primary-btn read-btn"
+                >Read More</a
+              >
             </div>
             <!-- card - 1 end -->
 
@@ -244,35 +257,40 @@
 
             <!-- card 2 start -->
             <div
-              class="d-flex flex-column align-items-center service-card"
+              class="d-flex flex-column align-items-center justify-content-between service-card"
               id="card-two"
             >
-              <div class="text-center text-lg-start image-container">
-                <image src="../assets/Images/gears.png" alt="" />
+              <div>
+                <div class="text-center  image-container">
+                  <image src="../assets/Images/gears.png" alt="" />
+                </div>
+                <h4 class="text-center card-title">Mechanical Design</h4>
+                <ul class="service-features">
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>2D Design Services</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Unleash Creativity with 3D Design</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Unleash the Potential of Sheet Metal</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Reverse Engineering Solutions</span>
+                  </li>
+                  <li class="d-flex li-container">
+                    <image src="../assets/Icons/list-icon.svg" />
+                    <span>Mechanical Drafting Services</span>
+                  </li>
+                </ul>
               </div>
-              <h4 class="text-center card-title">Mechanical Design</h4>
-              <ul class="service-features">
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>2D Design Services</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Unleash Creativity with 3D Design</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Unleash the Potential of Sheet Metal</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Reverse Engineering Solutions</span>
-                </li>
-                <li class="d-flex li-container">
-                  <image src="../assets/Icons/list-icon.svg" />
-                  <span>Mechanical Drafting Services</span>
-                </li>
-              </ul>
+              <a href="./service.html" class="primary-btn read-btn"
+                >Read More</a
+              >
             </div>
             <!-- card 2 end -->
           </section>
@@ -416,13 +434,13 @@
               <span class="title">Company</span>
               <ul>
                 <li class="nav-link animate-border">
-                  <a href="/about" target="_blank">About Us</a>
+                  <a href="#about-us-container">About Us</a>
                 </li>
                 <li class="nav-link animate-border">
-                  <a href="/contact-us" target="_blank">Contact Us</a>
+                  <a href="./contact.html" target="_blank">Contact Us</a>
                 </li>
                 <li class="nav-link animate-border">
-                  <a href="/gallery" target="_blank">Gallery</a>
+                  <a href="./gallery.html" target="_blank">Gallery</a>
                 </li>
               </ul>
             </div>
@@ -495,6 +513,5 @@
     <!-- gsap script ends -->
 
     <script src="../js/require.js"></script>
-    <!-- <script src="../js/index.js"></script> -->
   </body>
 </html>

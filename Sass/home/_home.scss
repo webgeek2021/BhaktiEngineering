@@ -112,7 +112,7 @@
         padding: 20px 30px;
         display: block;
         color: colors.$loading_background_color;
-
+        height: 70px;
         span {
           &::before {
             // content: url('../../assets/Icons/chevron-double-right.svg');
