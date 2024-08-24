@@ -8,8 +8,8 @@ const RepairingService = {
       content:
         "Trust our experts to restore the precision and functionality of your diamond machinery's ball screws, ensuring smooth operation and enhanced performance.",
       cardImage: [
-        "../assets/gallery/photo1.png",
-        "../assets/gallery/photo1.png",
+        "../assets/Images/BallScrew_1.png",
+        "../assets/Images/BallScrew2.jpeg",
       ],
     },
     {
@@ -17,8 +17,7 @@ const RepairingService = {
       content:
         "Our skilled technicians provide specialized services for shearing machine motor stage tilting, enabling enhanced cutting precision for your operations.",
       cardImage: [
-        "../assets/gallery/photo1.png",
-        "../assets/gallery/photo1.png",
+        "../assets/Images/Sarine-tilting-2.png",
       ],
     },
     {
@@ -26,8 +25,8 @@ const RepairingService = {
       content:
         "Ensure the reliability and efficiency of your shearing machine's motor with our expert repair solutions, tailored to meet your specific requirements",
       cardImage: [
-        "../assets/gallery/photo1.png",
-        "../assets/gallery/photo1.png",
+        "../assets/Images/Sarine-1.png",
+        "../assets/Images/Sarine-2.png",
       ],
     },
     {
@@ -35,8 +34,8 @@ const RepairingService = {
       content:
         "Trust our experts to restore the precision and functionality of your diamond machinery's ball screws, ensuring smooth operation and enhanced performance.",
       cardImage: [
-        "../assets/gallery/photo1.png",
-        "../assets/gallery/photo1.png",
+        "../assets/Images/XYZ_1.png",
+        "../assets/Images/XYZ_2.png",
       ],
     },
     {

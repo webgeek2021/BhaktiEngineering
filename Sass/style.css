@@ -116,7 +116,7 @@ button:focus, button:hover, button:active,
 }
 .toast .toast-header {
   border: none;
-  background-color: #abaaaa;
+  background-color: whitesmoke;
 }
 .toast .toast-header img {
   width: 50px;
@@ -1056,6 +1056,9 @@ header .navbar .show-options {
 }
 .footer-section .container .company-social {
   margin-bottom: 50px;
+}
+.footer-section .container .company-social .social-items {
+  cursor: pointer;
 }
 .footer-section .container .company-social .title {
   color: #911918;

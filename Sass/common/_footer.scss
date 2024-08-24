@@ -79,7 +79,10 @@
 
         .company-social {
             margin-bottom: 50px;
+            .social-items{
+                cursor: pointer;
 
+            }
             .title {
                 color: colors.$primary-red;
                 font-weight: 600;
