@@ -82,7 +82,8 @@ const scrubValue = 4;
 let hero_timeline = gsap.timeline();
 
 hero_timeline.to("#loading_screen", {
-  duration : 5,
+  // duration : 5,
+  duration : 1,
   yoyo : true,
 });
 
@@ -229,4 +230,22 @@ if (cardOne && cardTwo && logo) {
     
   }
 
+}
+
+if(logo){
+  gsap.from(
+    logo,
+    {
+      opacity: 0,
+      yoyo: true,
+      duration: 1,
+      scrollTrigger: {
+        trigger: logo,
+        start: "top center",
+        end: () => `+=${logo.offsetHeight}`,
+        scrub: scrubValue,
+      },
+    },
+    "-=1"
+  );
 }

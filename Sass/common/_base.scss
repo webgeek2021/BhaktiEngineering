@@ -97,7 +97,21 @@ button,
         color: colors.$loading_background_color;
     }
 }
-
+.w-80{
+    width : 80%;
+}
+.w-90{
+    width: 90%;
+}
+.m-t-10{
+    margin-top: 10px;
+}
+td,th{
+    text-align: center;
+}
+.w-120px{
+    width: 120px;
+}
 .toast{
     position: fixed;
     top: 200px;
@@ -168,7 +182,14 @@ body {
 .visible {
     display: block !important;
 }
-
+.whats-app-btn{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: colors.$whatsBtn;
+    padding: 10px;
+    border-radius: 50%;
+}
 .back-to-top-button {
     position: fixed;
     right: 20px;
